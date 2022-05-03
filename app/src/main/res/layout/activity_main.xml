@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/searchgitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340dp"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <EditText
+        android:id="@+id/searchshipbyid"
+        android:layout_width="339dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Search"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="6dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerviewforships"
+        android:layout_width="412dp"
+        android:layout_height="671dp"
+        android:layout_marginTop="70dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/shipid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shipid"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/shipmodel"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="model"-->
+        <!--            tools:ignore="MissingConstraints"-->
+        <!--            tools:layout_editor_absoluteX="3dp"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="bold|italic"-->
+        <!--            tools:layout_editor_absoluteY="60dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/shiptype"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="type"-->
+        <!--            tools:ignore="MissingConstraints"-->
+        <!--            tools:layout_editor_absoluteX="3dp"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="bold|italic"-->
+        <!--            tools:layout_editor_absoluteY="128dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/shipyearbuilt"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Yearbuilt"-->
+        <!--            tools:ignore="MissingConstraints"-->
+        <!--            tools:layout_editor_absoluteX="3dp"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="bold|italic"-->
+        <!--            tools:layout_editor_absoluteY="201dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/shiphomeport"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Homeport"-->
+        <!--            tools:ignore="MissingConstraints"-->
+        <!--            tools:layout_editor_absoluteX="0dp"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="bold|italic"-->
+        <!--            tools:layout_editor_absoluteY="269dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/shipactive"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="active"-->
+        <!--            tools:ignore="MissingConstraints"-->
+        <!--            tools:layout_editor_absoluteX="2dp"-->
+        <!--            tools:layout_editor_absoluteY="328dp"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="bold|italic"/>-->
+
+        <!--       <TextView-->
+        <!--           android:id="@+id/shipstatus"-->
+        <!--           android:layout_width="match_parent"-->
+        <!--           android:layout_height="wrap_content"-->
+        <!--           android:text="Status"-->
+        <!--           android:textSize="18sp"-->
+        <!--           android:textStyle="bold|italic"-->
+        <!--           tools:ignore="MissingConstraints"-->
+        <!--           tools:layout_editor_absoluteX="2dp"-->
+        <!--           tools:layout_editor_absoluteY="376dp" />-->
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
